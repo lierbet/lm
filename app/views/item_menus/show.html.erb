@@ -1,0 +1,18 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @item_menu.titulo %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @item_menu.url %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%=h @item_menu.usuario_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_menu_path(@item_menu) %> |
+<%= link_to 'Back', item_menus_path %>

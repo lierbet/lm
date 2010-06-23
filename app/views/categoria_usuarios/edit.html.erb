@@ -1,0 +1,16 @@
+<h1>Editing categoria_usuario</h1>
+
+<% form_for(@categoria_usuario) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @categoria_usuario %> |
+<%= link_to 'Back', categoria_usuarios_path %>

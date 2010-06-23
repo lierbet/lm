@@ -1,0 +1,20 @@
+<h1>Editing menu</h1>
+
+<% form_for(@menu) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :item_menu_id %><br />
+    <%= f.text_field :item_menu_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @menu %> |
+<%= link_to 'Back', menus_path %>
